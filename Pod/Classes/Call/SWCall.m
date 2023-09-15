@@ -1019,18 +1019,18 @@
                 break;
             }
             
-            if(pjsua_vid_dev_is_active (vdi.id)) {
-                currentDev = vdi.id;
-                
-                //Отключаем захват превью и его окно
-                pjsua_vid_win_id wid;
-                wid = pjsua_vid_preview_get_win(currentDev);
-                if (wid != PJSUA_INVALID_ID) {
-                    pjsua_vid_win_set_show(wid, PJ_FALSE);
-                }
-                
-                pjsua_vid_preview_stop(currentDev);
-            }
+//            if(pjsua_vid_dev_is_active (vdi.id)) {
+//                currentDev = vdi.id;
+//
+//                //Отключаем захват превью и его окно
+//                pjsua_vid_win_id wid;
+//                wid = pjsua_vid_preview_get_win(currentDev);
+//                if (wid != PJSUA_INVALID_ID) {
+//                    pjsua_vid_win_set_show(wid, PJ_FALSE);
+//                }
+//
+//                pjsua_vid_preview_stop(currentDev);
+//            }
         }
     }
     
