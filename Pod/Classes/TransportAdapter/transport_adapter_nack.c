@@ -192,7 +192,8 @@ struct nack_adapter
     void                *stream_ref;
     void                (*stream_rtp_cb)(void *user_data, void *pkt, pj_ssize_t);
     void                (*stream_rtcp_cb)(void *user_data, void *pkt, pj_ssize_t);
-    
+    pjmedia_type        stream_type;
+
     /* Timer members */
     
     pj_time_val                delay;                        /* Max buffering delay, msec */
