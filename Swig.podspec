@@ -32,9 +32,9 @@ Pod::Spec.new do |s|
 
   s.dependency 'AFNetworking/Reachability', '~> 3'
   s.dependency 'libextobjc', '~> 0.4'
-  # s.dependency 'CocoaLumberjack', '2.0.0-rc'
+# s.dependency 'CocoaLumberjack', '2.0.0-rc'
   s.dependency 'FCUUID', '~> 1.1'
-  s.dependency 'pjsip-ios', '~> 0.1'
+# s.dependency 'pjsip-ios', '~> 0.1'
 
   s.xcconfig = {
     'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) PJ_AUTOCONF=1',
