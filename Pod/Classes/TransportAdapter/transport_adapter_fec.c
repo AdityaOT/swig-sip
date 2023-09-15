@@ -1017,10 +1017,10 @@ static pj_status_t transport_attach(pjmedia_transport *tp,
     a->stream_ref = user_data;
     
     /* Get pointer RTP session information of the media stream */
-    if (a->stream_type == PJMEDIA_TYPE_VIDEO)
-        pjmedia_vid_stream_get_rtp_session_tx(a->stream_ref, &a->rtp_tx_ses);
-    /* Not implemented */
-    else
+//    if (a->stream_type == PJMEDIA_TYPE_VIDEO)
+//        pjmedia_vid_stream_get_rtp_session_tx(a->stream_ref, &a->rtp_tx_ses);
+//    /* Not implemented */
+//    else
         return PJ_EINVALIDOP;
     
     

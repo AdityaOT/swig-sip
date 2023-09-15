@@ -84,6 +84,8 @@
 		847C20172AB49AEA00BA6FC6 /* SWSipThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C200F2AB49AEA00BA6FC6 /* SWSipThread.h */; };
 		847C201B2AB49B2800BA6FC6 /* EWFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C20192AB49B2800BA6FC6 /* EWFileLogger.h */; };
 		847C201C2AB49B2800BA6FC6 /* EWFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C201A2AB49B2800BA6FC6 /* EWFileLogger.m */; };
+		847C20232AB4A35000BA6FC6 /* SWAudioSessionObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C20212AB4A35000BA6FC6 /* SWAudioSessionObserver.h */; };
+		847C20242AB4A35000BA6FC6 /* SWAudioSessionObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C20222AB4A35000BA6FC6 /* SWAudioSessionObserver.m */; };
 		8639DFCE4B14DD70D23BD7786300A7BB /* SWCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 7000DDF2130468B56CD6DF2F5D30F0A3 /* SWCall.m */; };
 		888E47B75CEF0C4D4AD896F140D7D88A /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 317B65D27E84B2695AAADB99FBFE46AB /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89FB9863C7A5D84D9030CC7226A0F4C8 /* SWEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F5DD2B53528CC5D7B79B4D94E1A3A2 /* SWEndpoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -357,7 +359,6 @@
 		53E4E59AC79FAE5D429632868511213D /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = opensslIncludes/openssl/bio.h; sourceTree = "<group>"; };
 		559122F45A050D6E6D25FB128849550F /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = opensslIncludes/openssl/ocsp.h; sourceTree = "<group>"; };
 		57F6B2E8F4E64780DFCD14A4F444036E /* Pods-Swig-Pod-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Swig-Pod-resources.sh"; sourceTree = "<group>"; };
-		5831AF485828293E66086E395DF1667C /* Ringtone.aif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = Ringtone.aif; sourceTree = "<group>"; };
 		588CEE70B50837148AAA1A869B1B4A4F /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = opensslIncludes/openssl/hmac.h; sourceTree = "<group>"; };
 		59271EECC866896A68FEC3888B3B657C /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
 		5A997F2AA726DD26DB0D4A7BDE5321B4 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyBoardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
@@ -421,6 +422,9 @@
 		847C200F2AB49AEA00BA6FC6 /* SWSipThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSipThread.h; sourceTree = "<group>"; };
 		847C20192AB49B2800BA6FC6 /* EWFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWFileLogger.h; sourceTree = "<group>"; };
 		847C201A2AB49B2800BA6FC6 /* EWFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWFileLogger.m; sourceTree = "<group>"; };
+		847C201D2AB4A1CC00BA6FC6 /* Ringtone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ringtone.caf; sourceTree = "<group>"; };
+		847C20212AB4A35000BA6FC6 /* SWAudioSessionObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAudioSessionObserver.h; sourceTree = "<group>"; };
+		847C20222AB4A35000BA6FC6 /* SWAudioSessionObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAudioSessionObserver.m; sourceTree = "<group>"; };
 		85BD95842EBBEA6345FD668F8564C3CD /* Pods-Swig-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swig-dummy.m"; sourceTree = "<group>"; };
 		88B020B49E29569B395F14C9D35BD0E3 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = opensslIncludes/openssl/rand.h; sourceTree = "<group>"; };
 		89DD759FD1CDF4D00D671E1F66E8CB13 /* Pods-Swig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swig.debug.xcconfig"; sourceTree = "<group>"; };
@@ -850,6 +854,8 @@
 		501874EA079884802AB175AD09547A91 /* Call */ = {
 			isa = PBXGroup;
 			children = (
+				847C20212AB4A35000BA6FC6 /* SWAudioSessionObserver.h */,
+				847C20222AB4A35000BA6FC6 /* SWAudioSessionObserver.m */,
 				720527E095B3C6F6A519E13A1450F10A /* SWCall.h */,
 				7000DDF2130468B56CD6DF2F5D30F0A3 /* SWCall.m */,
 				DF219D5F08C72DD773C1D1B1FADD960C /* SWCallProtocol.h */,
@@ -1224,7 +1230,7 @@
 		CCF4522283311909A5338562DDCAB26E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				5831AF485828293E66086E395DF1667C /* Ringtone.aif */,
+				847C201D2AB4A1CC00BA6FC6 /* Ringtone.caf */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -1416,6 +1422,7 @@
 				847C20012AB49AA000BA6FC6 /* SWIntentProtocol.h in Headers */,
 				B234662C617F8171E625C2F0794E526B /* Swig.h in Headers */,
 				847C20132AB49AEA00BA6FC6 /* transport_adapter_nack.h in Headers */,
+				847C20232AB4A35000BA6FC6 /* SWAudioSessionObserver.h in Headers */,
 				1160B29DEDF448026B687F691C4B207C /* SWMutableCall.h in Headers */,
 				847C1FFF2AB49AA000BA6FC6 /* SWMessageSender.h in Headers */,
 				CEC5FF372AFC7A1639D379E19302F672 /* SWMutableContact.h in Headers */,
@@ -1741,6 +1748,7 @@
 				847C20052AB49AA000BA6FC6 /* SWMessageSender.m in Sources */,
 				24DA84005094A10673AC7CD2B5B3F513 /* SWRingtone.m in Sources */,
 				847C20102AB49AEA00BA6FC6 /* transport_adapter_nack.c in Sources */,
+				847C20242AB4A35000BA6FC6 /* SWAudioSessionObserver.m in Sources */,
 				847C20142AB49AEA00BA6FC6 /* SWSipThread.m in Sources */,
 				4DA7A5137A194A84A25F63B35D404E1B /* SWTransportConfiguration.m in Sources */,
 				847C20112AB49AEA00BA6FC6 /* transport_adapter_fec.c in Sources */,

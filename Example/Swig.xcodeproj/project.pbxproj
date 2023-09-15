@@ -48,6 +48,7 @@
 		847C1FEC2AB48F9400BA6FC6 /* SWSipThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FDD2AB48F4B00BA6FC6 /* SWSipThread.m */; };
 		847C1FF22AB4960F00BA6FC6 /* EWFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FEF2AB495FF00BA6FC6 /* EWFileLogger.m */; };
 		847C1FF52AB4967200BA6FC6 /* SWRingtoneDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FF32AB4967200BA6FC6 /* SWRingtoneDescription.m */; };
+		847C20202AB4A33E00BA6FC6 /* SWAudioSessionObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C201F2AB4A33E00BA6FC6 /* SWAudioSessionObserver.m */; };
 		938A6BD61BB942D40046225C /* SWConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938A6BD51BB942D40046225C /* SWConfirmViewController.m */; };
 		938F5C9B1BAAD914001054AB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938F5C9A1BAAD914001054AB /* Launch Screen.storyboard */; };
 		B9618FAF1DEC959433850E9A /* libPods-Swig-Pod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD1291310B3C7F5C8557F20 /* libPods-Swig-Pod.a */; };
@@ -173,6 +174,8 @@
 		847C1FEF2AB495FF00BA6FC6 /* EWFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWFileLogger.m; sourceTree = "<group>"; };
 		847C1FF32AB4967200BA6FC6 /* SWRingtoneDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRingtoneDescription.m; sourceTree = "<group>"; };
 		847C1FF42AB4967200BA6FC6 /* SWRingtoneDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRingtoneDescription.h; sourceTree = "<group>"; };
+		847C201E2AB4A33E00BA6FC6 /* SWAudioSessionObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAudioSessionObserver.h; sourceTree = "<group>"; };
+		847C201F2AB4A33E00BA6FC6 /* SWAudioSessionObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAudioSessionObserver.m; sourceTree = "<group>"; };
 		92FED0AC9ECB4F44906D752B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		938A6BD41BB942D40046225C /* SWConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWConfirmViewController.h; sourceTree = "<group>"; };
 		938A6BD51BB942D40046225C /* SWConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWConfirmViewController.m; sourceTree = "<group>"; };
@@ -318,6 +321,8 @@
 		065D232E1A7B5B01008A280F /* Call */ = {
 			isa = PBXGroup;
 			children = (
+				847C201E2AB4A33E00BA6FC6 /* SWAudioSessionObserver.h */,
+				847C201F2AB4A33E00BA6FC6 /* SWAudioSessionObserver.m */,
 				065D232F1A7B5B01008A280F /* SWCall.h */,
 				065D23301A7B5B01008A280F /* SWCall.m */,
 				065D23311A7B5B01008A280F /* SWCallProtocol.h */,
@@ -876,6 +881,7 @@
 				065D23541A7B5B01008A280F /* SWContact.m in Sources */,
 				065D23521A7B5B01008A280F /* SWAccountConfiguration.m in Sources */,
 				065D23511A7B5B01008A280F /* SWAccount.m in Sources */,
+				847C20202AB4A33E00BA6FC6 /* SWAudioSessionObserver.m in Sources */,
 				065D23531A7B5B01008A280F /* SWCall.m in Sources */,
 				065D23561A7B5B01008A280F /* SWMutableContact.m in Sources */,
 				065D235D1A7B5B01008A280F /* SWUriFormatter.m in Sources */,
