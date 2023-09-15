@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/petester42/swig.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/petester42'
 
-  s.static_framework = true
+  # s.static_framework = true
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
