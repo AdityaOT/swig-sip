@@ -39,6 +39,15 @@
 		6003F5A7195388D20070C39A /* SWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* SWViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		72B261CF1929CB7ADACD21E5 /* libPods-Swig-Swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A8E91C7703D3CFFB120480 /* libPods-Swig-Swift.a */; };
+		847C1FD92AB48D9F00BA6FC6 /* SWSipMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FD32AB48D9F00BA6FC6 /* SWSipMessage.m */; };
+		847C1FDA2AB48D9F00BA6FC6 /* SWMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FD62AB48D9F00BA6FC6 /* SWMessageSender.m */; };
+		847C1FDB2AB48D9F00BA6FC6 /* SWIntentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FD72AB48D9F00BA6FC6 /* SWIntentManager.m */; };
+		847C1FE82AB48F4B00BA6FC6 /* transport_adapter_nack.c in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FE22AB48F4B00BA6FC6 /* transport_adapter_nack.c */; };
+		847C1FE92AB48F4B00BA6FC6 /* transport_adapter_fec.c in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FE32AB48F4B00BA6FC6 /* transport_adapter_fec.c */; };
+		847C1FEA2AB48F8E00BA6FC6 /* SWThreadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FDE2AB48F4B00BA6FC6 /* SWThreadManager.m */; };
+		847C1FEC2AB48F9400BA6FC6 /* SWSipThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FDD2AB48F4B00BA6FC6 /* SWSipThread.m */; };
+		847C1FF22AB4960F00BA6FC6 /* EWFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FEF2AB495FF00BA6FC6 /* EWFileLogger.m */; };
+		847C1FF52AB4967200BA6FC6 /* SWRingtoneDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FF32AB4967200BA6FC6 /* SWRingtoneDescription.m */; };
 		938A6BD61BB942D40046225C /* SWConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938A6BD51BB942D40046225C /* SWConfirmViewController.m */; };
 		938F5C9B1BAAD914001054AB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938F5C9A1BAAD914001054AB /* Launch Screen.storyboard */; };
 		B9618FAF1DEC959433850E9A /* libPods-Swig-Pod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CD1291310B3C7F5C8557F20 /* libPods-Swig-Pod.a */; };
@@ -144,6 +153,26 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7A3A1D9390CB6FEDE2305AEB /* Pods-Swig-Pod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swig-Pod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swig-Pod/Pods-Swig-Pod.debug.xcconfig"; sourceTree = "<group>"; };
 		7C2779B85E5A40BBBC30E6A9 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		847C1FD12AB48D9F00BA6FC6 /* SWIntentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWIntentManager.h; sourceTree = "<group>"; };
+		847C1FD22AB48D9F00BA6FC6 /* SWSipMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSipMessage.h; sourceTree = "<group>"; };
+		847C1FD32AB48D9F00BA6FC6 /* SWSipMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSipMessage.m; sourceTree = "<group>"; };
+		847C1FD42AB48D9F00BA6FC6 /* SWMessageSenderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMessageSenderProtocol.h; sourceTree = "<group>"; };
+		847C1FD52AB48D9F00BA6FC6 /* SWMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMessageSender.h; sourceTree = "<group>"; };
+		847C1FD62AB48D9F00BA6FC6 /* SWMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMessageSender.m; sourceTree = "<group>"; };
+		847C1FD72AB48D9F00BA6FC6 /* SWIntentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWIntentManager.m; sourceTree = "<group>"; };
+		847C1FD82AB48D9F00BA6FC6 /* SWIntentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWIntentProtocol.h; sourceTree = "<group>"; };
+		847C1FDD2AB48F4B00BA6FC6 /* SWSipThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSipThread.m; sourceTree = "<group>"; };
+		847C1FDE2AB48F4B00BA6FC6 /* SWThreadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWThreadManager.m; sourceTree = "<group>"; };
+		847C1FDF2AB48F4B00BA6FC6 /* SWThreadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWThreadManager.h; sourceTree = "<group>"; };
+		847C1FE02AB48F4B00BA6FC6 /* SWSipThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSipThread.h; sourceTree = "<group>"; };
+		847C1FE22AB48F4B00BA6FC6 /* transport_adapter_nack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport_adapter_nack.c; sourceTree = "<group>"; };
+		847C1FE32AB48F4B00BA6FC6 /* transport_adapter_fec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport_adapter_fec.c; sourceTree = "<group>"; };
+		847C1FE42AB48F4B00BA6FC6 /* transport_adapter_fec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport_adapter_fec.h; sourceTree = "<group>"; };
+		847C1FE52AB48F4B00BA6FC6 /* transport_adapter_nack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport_adapter_nack.h; sourceTree = "<group>"; };
+		847C1FEE2AB495FF00BA6FC6 /* EWFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWFileLogger.h; sourceTree = "<group>"; };
+		847C1FEF2AB495FF00BA6FC6 /* EWFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWFileLogger.m; sourceTree = "<group>"; };
+		847C1FF32AB4967200BA6FC6 /* SWRingtoneDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRingtoneDescription.m; sourceTree = "<group>"; };
+		847C1FF42AB4967200BA6FC6 /* SWRingtoneDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRingtoneDescription.h; sourceTree = "<group>"; };
 		92FED0AC9ECB4F44906D752B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		938A6BD41BB942D40046225C /* SWConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWConfirmViewController.h; sourceTree = "<group>"; };
 		938A6BD51BB942D40046225C /* SWConfirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWConfirmViewController.m; sourceTree = "<group>"; };
@@ -259,6 +288,9 @@
 		065D23261A7B5B01008A280F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				847C1FED2AB495FF00BA6FC6 /* EWLogger */,
+				847C1FDC2AB48F4B00BA6FC6 /* Threads */,
+				847C1FE12AB48F4B00BA6FC6 /* TransportAdapter */,
 				065D23271A7B5B01008A280F /* .gitkeep */,
 				065D23281A7B5B01008A280F /* Account */,
 				065D232E1A7B5B01008A280F /* Call */,
@@ -300,6 +332,8 @@
 				065D233A1A7B5B01008A280F /* SWRingback.m */,
 				065D233B1A7B5B01008A280F /* SWRingtone.h */,
 				065D233C1A7B5B01008A280F /* SWRingtone.m */,
+				847C1FF42AB4967200BA6FC6 /* SWRingtoneDescription.h */,
+				847C1FF32AB4967200BA6FC6 /* SWRingtoneDescription.m */,
 			);
 			path = Call;
 			sourceTree = "<group>";
@@ -316,6 +350,14 @@
 		065D23401A7B5B01008A280F /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
+				847C1FD12AB48D9F00BA6FC6 /* SWIntentManager.h */,
+				847C1FD72AB48D9F00BA6FC6 /* SWIntentManager.m */,
+				847C1FD82AB48D9F00BA6FC6 /* SWIntentProtocol.h */,
+				847C1FD52AB48D9F00BA6FC6 /* SWMessageSender.h */,
+				847C1FD62AB48D9F00BA6FC6 /* SWMessageSender.m */,
+				847C1FD42AB48D9F00BA6FC6 /* SWMessageSenderProtocol.h */,
+				847C1FD22AB48D9F00BA6FC6 /* SWSipMessage.h */,
+				847C1FD32AB48D9F00BA6FC6 /* SWSipMessage.m */,
 				065D23411A7B5B01008A280F /* SWEndpoint.h */,
 				065D23421A7B5B01008A280F /* SWEndpoint.m */,
 				065D23431A7B5B01008A280F /* SWEndpointConfiguration.h */,
@@ -424,6 +466,37 @@
 				92FED0AC9ECB4F44906D752B /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		847C1FDC2AB48F4B00BA6FC6 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				847C1FDD2AB48F4B00BA6FC6 /* SWSipThread.m */,
+				847C1FDE2AB48F4B00BA6FC6 /* SWThreadManager.m */,
+				847C1FDF2AB48F4B00BA6FC6 /* SWThreadManager.h */,
+				847C1FE02AB48F4B00BA6FC6 /* SWSipThread.h */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		847C1FE12AB48F4B00BA6FC6 /* TransportAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				847C1FE22AB48F4B00BA6FC6 /* transport_adapter_nack.c */,
+				847C1FE32AB48F4B00BA6FC6 /* transport_adapter_fec.c */,
+				847C1FE42AB48F4B00BA6FC6 /* transport_adapter_fec.h */,
+				847C1FE52AB48F4B00BA6FC6 /* transport_adapter_nack.h */,
+			);
+			path = TransportAdapter;
+			sourceTree = "<group>";
+		};
+		847C1FED2AB495FF00BA6FC6 /* EWLogger */ = {
+			isa = PBXGroup;
+			children = (
+				847C1FEE2AB495FF00BA6FC6 /* EWFileLogger.h */,
+				847C1FEF2AB495FF00BA6FC6 /* EWFileLogger.m */,
+			);
+			path = EWLogger;
 			sourceTree = "<group>";
 		};
 		BE9D18F9D420803D2A51BFD5 /* Pods */ = {
@@ -561,6 +634,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -789,11 +863,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847C1FEA2AB48F8E00BA6FC6 /* SWThreadManager.m in Sources */,
 				065D235A1A7B5B01008A280F /* SWEndpoint.m in Sources */,
+				847C1FF52AB4967200BA6FC6 /* SWRingtoneDescription.m in Sources */,
 				065D235B1A7B5B01008A280F /* SWEndpointConfiguration.m in Sources */,
 				065D235E1A7B5B01008A280F /* SharkfoodMuteSwitchDetector.m in Sources */,
 				065D23571A7B5B01008A280F /* SWRingback.m in Sources */,
 				065D23591A7B5B01008A280F /* NSString+PJString.m in Sources */,
+				847C1FEC2AB48F9400BA6FC6 /* SWSipThread.m in Sources */,
 				065D235C1A7B5B01008A280F /* SWTransportConfiguration.m in Sources */,
 				065D23551A7B5B01008A280F /* SWMutableCall.m in Sources */,
 				065D23541A7B5B01008A280F /* SWContact.m in Sources */,
@@ -820,9 +897,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* SWAppDelegate.m in Sources */,
+				847C1FF22AB4960F00BA6FC6 /* EWFileLogger.m in Sources */,
+				847C1FDB2AB48D9F00BA6FC6 /* SWIntentManager.m in Sources */,
+				847C1FE82AB48F4B00BA6FC6 /* transport_adapter_nack.c in Sources */,
 				6003F5A7195388D20070C39A /* SWViewController.m in Sources */,
+				847C1FE92AB48F4B00BA6FC6 /* transport_adapter_fec.c in Sources */,
+				847C1FDA2AB48D9F00BA6FC6 /* SWMessageSender.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				938A6BD61BB942D40046225C /* SWConfirmViewController.m in Sources */,
+				847C1FD92AB48D9F00BA6FC6 /* SWSipMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

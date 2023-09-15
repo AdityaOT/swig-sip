@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SWAccount.h"
+#import "SWMessageSenderProtocol.h"
 #import "SWIntentProtocol.h"
 
 @interface SWSipMessage : NSObject<SWIntentProtocol>

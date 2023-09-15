@@ -56,7 +56,7 @@
         status = pjmedia_tonegen_create2(pool, &name, (unsigned int)endpoint.endpointConfiguration.clockRate, kSWChannelCount, (unsigned int)samplesPerFrame, 16, PJMEDIA_TONEGEN_LOOP, &ringbackPort);
         
         if (status != PJ_SUCCESS) {
-            DDLogDebug(@"Error creating ringback tones");
+            NSLog(@"Error creating ringback tones");
             shouldReturnNil = YES;
             return;
         }
@@ -77,7 +77,7 @@
         status = pjsua_conf_add_port([endpoint pjPool], ringbackPort, (int *)&ringbackSlot);
         
         if (status != PJ_SUCCESS) {
-            DDLogDebug(@"Error adding media port for ringback tones");
+            NSLog(@"Error adding media port for ringback tones");
             shouldReturnNil = YES;
             return;
         }

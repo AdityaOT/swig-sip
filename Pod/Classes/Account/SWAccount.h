@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 #import <pjsip/sip_types.h>
 #import "pjsua.h"
-#import "SWMessageSenderProtocol.h"
+//#import "SWMessageSenderProtocol.hk"
 
 //TODO: remove account from accounts when disconnected
 
@@ -93,8 +93,8 @@ typedef NS_ENUM(NSInteger, SWMessageDirection) {
 -(void)sendMessage:(NSString *)message to:(NSString *)URI completionHandler:(void(^)(NSError *error, NSString *SMID, NSString *fileServer, NSDate *date))handler;
 -(void)sendGroupMessage:(NSString *)message to:(NSString *)URI completionHandler:(void(^)(NSError *error, NSString *SMID, NSString *fileServer, NSDate *date))handler;
 
--(void)sendMessage:(NSString *)message fileType:(SWFileType) fileType fileHash:(NSString *) fileHash to:(NSString *)URI isGroup:(BOOL) isGroup completionHandler:(void(^)(NSError *error, NSString *SMID, NSString *fileServer, NSDate *date))handler;
--(void)sendMessage:(NSString *)message fileType:(SWFileType) fileType fileHash:(NSString *) fileHash to:(NSString *)URI isGroup:(BOOL) isGroup forceOffline:(BOOL) forceOffline isGSM:(BOOL) isGSM completionHandler:(void(^)(NSError *error, NSString *SMID, NSString *fileServer, NSDate *date))handler;
+//-(void)sendMessage:(NSString *)message fileType:(SWFileType) fileType fileHash:(NSString *) fileHash to:(NSString *)URI isGroup:(BOOL) isGroup completionHandler:(void(^)(NSError *error, NSString *SMID, NSString *fileServer, NSDate *date))handler;
+//-(void)sendMessage:(NSString *)message fileType:(SWFileType) fileType fileHash:(NSString *) fileHash to:(NSString *)URI isGroup:(BOOL) isGroup forceOffline:(BOOL) forceOffline isGSM:(BOOL) isGSM completionHandler:(void(^)(NSError *error, NSString *SMID, NSString *fileServer, NSDate *date))handler;
 -(void) sendLogMessage: (NSString *) text ToPhone: (NSString *) partner;
 
 -(void)sendMessageReadNotifyTo:(NSString *)URI smid:(NSUInteger)smid groupID:(NSInteger) groupID completionHandler:(void(^)(NSError *error))handler;

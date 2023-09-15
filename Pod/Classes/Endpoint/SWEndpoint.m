@@ -420,7 +420,7 @@ static SWEndpoint *_sharedEndpoint = nil;
     
     
     [self reset:^(NSError *error) {
-        if (error) DDLogDebug(@"%@", [error description]);
+        if (error) NSLog(@"%@", [error description]);
     }];
 }
 

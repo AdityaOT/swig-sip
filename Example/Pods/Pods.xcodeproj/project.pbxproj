@@ -66,6 +66,24 @@
 		813C5DC94BB7EAA8F9B5CC4ABB713D65 /* NSString+PJString.h in Headers */ = {isa = PBXBuildFile; fileRef = 34222906121F6B96E16049CD62733FB7 /* NSString+PJString.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8465EC3DC10F5995B21E16B932B46DD8 /* EXTADT.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C457976D7D8E1D773385B26142692D5 /* EXTADT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		846BFE2E7D90DBDD1D155049537DFBF7 /* SWRingback.h in Headers */ = {isa = PBXBuildFile; fileRef = B03FBBB1D6C0CB08A179B98E644B3955 /* SWRingback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		847C1FFE2AB49AA000BA6FC6 /* SWMessageSenderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C1FF62AB49AA000BA6FC6 /* SWMessageSenderProtocol.h */; };
+		847C1FFF2AB49AA000BA6FC6 /* SWMessageSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C1FF72AB49AA000BA6FC6 /* SWMessageSender.h */; };
+		847C20002AB49AA000BA6FC6 /* SWIntentManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C1FF82AB49AA000BA6FC6 /* SWIntentManager.h */; };
+		847C20012AB49AA000BA6FC6 /* SWIntentProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C1FF92AB49AA000BA6FC6 /* SWIntentProtocol.h */; };
+		847C20022AB49AA000BA6FC6 /* SWSipMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C1FFA2AB49AA000BA6FC6 /* SWSipMessage.h */; };
+		847C20032AB49AA000BA6FC6 /* SWIntentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FFB2AB49AA000BA6FC6 /* SWIntentManager.m */; };
+		847C20042AB49AA000BA6FC6 /* SWSipMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FFC2AB49AA000BA6FC6 /* SWSipMessage.m */; };
+		847C20052AB49AA000BA6FC6 /* SWMessageSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C1FFD2AB49AA000BA6FC6 /* SWMessageSender.m */; };
+		847C20102AB49AEA00BA6FC6 /* transport_adapter_nack.c in Sources */ = {isa = PBXBuildFile; fileRef = 847C20072AB49AEA00BA6FC6 /* transport_adapter_nack.c */; };
+		847C20112AB49AEA00BA6FC6 /* transport_adapter_fec.c in Sources */ = {isa = PBXBuildFile; fileRef = 847C20082AB49AEA00BA6FC6 /* transport_adapter_fec.c */; };
+		847C20122AB49AEA00BA6FC6 /* transport_adapter_fec.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C20092AB49AEA00BA6FC6 /* transport_adapter_fec.h */; };
+		847C20132AB49AEA00BA6FC6 /* transport_adapter_nack.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C200A2AB49AEA00BA6FC6 /* transport_adapter_nack.h */; };
+		847C20142AB49AEA00BA6FC6 /* SWSipThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C200C2AB49AEA00BA6FC6 /* SWSipThread.m */; };
+		847C20152AB49AEA00BA6FC6 /* SWThreadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C200D2AB49AEA00BA6FC6 /* SWThreadManager.m */; };
+		847C20162AB49AEA00BA6FC6 /* SWThreadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C200E2AB49AEA00BA6FC6 /* SWThreadManager.h */; };
+		847C20172AB49AEA00BA6FC6 /* SWSipThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C200F2AB49AEA00BA6FC6 /* SWSipThread.h */; };
+		847C201B2AB49B2800BA6FC6 /* EWFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 847C20192AB49B2800BA6FC6 /* EWFileLogger.h */; };
+		847C201C2AB49B2800BA6FC6 /* EWFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 847C201A2AB49B2800BA6FC6 /* EWFileLogger.m */; };
 		8639DFCE4B14DD70D23BD7786300A7BB /* SWCall.m in Sources */ = {isa = PBXBuildFile; fileRef = 7000DDF2130468B56CD6DF2F5D30F0A3 /* SWCall.m */; };
 		888E47B75CEF0C4D4AD896F140D7D88A /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 317B65D27E84B2695AAADB99FBFE46AB /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89FB9863C7A5D84D9030CC7226A0F4C8 /* SWEndpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = F1F5DD2B53528CC5D7B79B4D94E1A3A2 /* SWEndpoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -385,6 +403,24 @@
 		82930A3C6B14E06502F4E3536BE60C43 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = opensslIncludes/openssl/dsa.h; sourceTree = "<group>"; };
 		82C377CF302AFDB74DAF328EC016E9B6 /* EXTConcreteProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXTConcreteProtocol.m; path = extobjc/EXTConcreteProtocol.m; sourceTree = "<group>"; };
 		836BC755000AA26186159645F7D4231D /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIWindow+Hierarchy.m"; path = "IQKeyBoardManager/Categories/IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		847C1FF62AB49AA000BA6FC6 /* SWMessageSenderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMessageSenderProtocol.h; sourceTree = "<group>"; };
+		847C1FF72AB49AA000BA6FC6 /* SWMessageSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWMessageSender.h; sourceTree = "<group>"; };
+		847C1FF82AB49AA000BA6FC6 /* SWIntentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWIntentManager.h; sourceTree = "<group>"; };
+		847C1FF92AB49AA000BA6FC6 /* SWIntentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWIntentProtocol.h; sourceTree = "<group>"; };
+		847C1FFA2AB49AA000BA6FC6 /* SWSipMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSipMessage.h; sourceTree = "<group>"; };
+		847C1FFB2AB49AA000BA6FC6 /* SWIntentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWIntentManager.m; sourceTree = "<group>"; };
+		847C1FFC2AB49AA000BA6FC6 /* SWSipMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSipMessage.m; sourceTree = "<group>"; };
+		847C1FFD2AB49AA000BA6FC6 /* SWMessageSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWMessageSender.m; sourceTree = "<group>"; };
+		847C20072AB49AEA00BA6FC6 /* transport_adapter_nack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport_adapter_nack.c; sourceTree = "<group>"; };
+		847C20082AB49AEA00BA6FC6 /* transport_adapter_fec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transport_adapter_fec.c; sourceTree = "<group>"; };
+		847C20092AB49AEA00BA6FC6 /* transport_adapter_fec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport_adapter_fec.h; sourceTree = "<group>"; };
+		847C200A2AB49AEA00BA6FC6 /* transport_adapter_nack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = transport_adapter_nack.h; sourceTree = "<group>"; };
+		847C200C2AB49AEA00BA6FC6 /* SWSipThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWSipThread.m; sourceTree = "<group>"; };
+		847C200D2AB49AEA00BA6FC6 /* SWThreadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWThreadManager.m; sourceTree = "<group>"; };
+		847C200E2AB49AEA00BA6FC6 /* SWThreadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWThreadManager.h; sourceTree = "<group>"; };
+		847C200F2AB49AEA00BA6FC6 /* SWSipThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWSipThread.h; sourceTree = "<group>"; };
+		847C20192AB49B2800BA6FC6 /* EWFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EWFileLogger.h; sourceTree = "<group>"; };
+		847C201A2AB49B2800BA6FC6 /* EWFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EWFileLogger.m; sourceTree = "<group>"; };
 		85BD95842EBBEA6345FD668F8564C3CD /* Pods-Swig-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Swig-dummy.m"; sourceTree = "<group>"; };
 		88B020B49E29569B395F14C9D35BD0E3 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = opensslIncludes/openssl/rand.h; sourceTree = "<group>"; };
 		89DD759FD1CDF4D00D671E1F66E8CB13 /* Pods-Swig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Swig.debug.xcconfig"; sourceTree = "<group>"; };
@@ -844,6 +880,14 @@
 		553436F90B27656648F373CD3BB2337F /* Endpoint */ = {
 			isa = PBXGroup;
 			children = (
+				847C1FF82AB49AA000BA6FC6 /* SWIntentManager.h */,
+				847C1FFB2AB49AA000BA6FC6 /* SWIntentManager.m */,
+				847C1FF92AB49AA000BA6FC6 /* SWIntentProtocol.h */,
+				847C1FF72AB49AA000BA6FC6 /* SWMessageSender.h */,
+				847C1FFD2AB49AA000BA6FC6 /* SWMessageSender.m */,
+				847C1FF62AB49AA000BA6FC6 /* SWMessageSenderProtocol.h */,
+				847C1FFA2AB49AA000BA6FC6 /* SWSipMessage.h */,
+				847C1FFC2AB49AA000BA6FC6 /* SWSipMessage.m */,
 				F1F5DD2B53528CC5D7B79B4D94E1A3A2 /* SWEndpoint.h */,
 				C1E211FD95DB13100A63A82EAE4C3B8D /* SWEndpoint.m */,
 				F000CB417742486810CC7CA4C8F4F335 /* SWEndpointConfiguration.h */,
@@ -949,6 +993,37 @@
 			path = "../../../../Pods/pjsip-ios";
 			sourceTree = "<group>";
 		};
+		847C20062AB49AEA00BA6FC6 /* TransportAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				847C20072AB49AEA00BA6FC6 /* transport_adapter_nack.c */,
+				847C20082AB49AEA00BA6FC6 /* transport_adapter_fec.c */,
+				847C20092AB49AEA00BA6FC6 /* transport_adapter_fec.h */,
+				847C200A2AB49AEA00BA6FC6 /* transport_adapter_nack.h */,
+			);
+			path = TransportAdapter;
+			sourceTree = "<group>";
+		};
+		847C200B2AB49AEA00BA6FC6 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				847C200C2AB49AEA00BA6FC6 /* SWSipThread.m */,
+				847C200D2AB49AEA00BA6FC6 /* SWThreadManager.m */,
+				847C200E2AB49AEA00BA6FC6 /* SWThreadManager.h */,
+				847C200F2AB49AEA00BA6FC6 /* SWSipThread.h */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		847C20182AB49B2800BA6FC6 /* EWLogger */ = {
+			isa = PBXGroup;
+			children = (
+				847C20192AB49B2800BA6FC6 /* EWFileLogger.h */,
+				847C201A2AB49B2800BA6FC6 /* EWFileLogger.m */,
+			);
+			path = EWLogger;
+			sourceTree = "<group>";
+		};
 		85ADBFE6B3332DDA36286624C1D0DBD3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -964,6 +1039,9 @@
 		8923C55AE33F20509157B0FB49E17C49 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				847C20182AB49B2800BA6FC6 /* EWLogger */,
+				847C200B2AB49AEA00BA6FC6 /* Threads */,
+				847C20062AB49AEA00BA6FC6 /* TransportAdapter */,
 				ACEDA1345189CA572D8B853E541E301A /* Logger.h */,
 				F2A5B75149C44459E9211C55E5A91FF2 /* Swig.h */,
 				D3BD782F1191A7AA040B0195A5C50A7E /* Account */,
@@ -1325,18 +1403,28 @@
 				13868077CB8AF928227EF10D87DD0CF8 /* SharkfoodMuteSwitchDetector.h in Headers */,
 				B7B243E81FFD88F689925937AECE1658 /* SWAccount.h in Headers */,
 				F7AF2AF642019B1068667D39DB91FAF0 /* SWAccountConfiguration.h in Headers */,
+				847C1FFE2AB49AA000BA6FC6 /* SWMessageSenderProtocol.h in Headers */,
 				CA48CA49B0C024BB21FE0921B94041D0 /* SWAccountProtocol.h in Headers */,
+				847C20022AB49AA000BA6FC6 /* SWSipMessage.h in Headers */,
 				FBFBA87B38BAB3F4C8C7C4774838AD45 /* SWCall.h in Headers */,
+				847C20172AB49AEA00BA6FC6 /* SWSipThread.h in Headers */,
+				847C20162AB49AEA00BA6FC6 /* SWThreadManager.h in Headers */,
 				B2B835B4C5284711A36C2086CCB28FCE /* SWCallProtocol.h in Headers */,
 				4B501888F8597653756E315D3F8C15A1 /* SWContact.h in Headers */,
 				89FB9863C7A5D84D9030CC7226A0F4C8 /* SWEndpoint.h in Headers */,
 				1A36E394497277AF9DDFFB03D8459397 /* SWEndpointConfiguration.h in Headers */,
+				847C20012AB49AA000BA6FC6 /* SWIntentProtocol.h in Headers */,
 				B234662C617F8171E625C2F0794E526B /* Swig.h in Headers */,
+				847C20132AB49AEA00BA6FC6 /* transport_adapter_nack.h in Headers */,
 				1160B29DEDF448026B687F691C4B207C /* SWMutableCall.h in Headers */,
+				847C1FFF2AB49AA000BA6FC6 /* SWMessageSender.h in Headers */,
 				CEC5FF372AFC7A1639D379E19302F672 /* SWMutableContact.h in Headers */,
+				847C20122AB49AEA00BA6FC6 /* transport_adapter_fec.h in Headers */,
 				8C3F4ECE977FAF096E1302CA66F4AC05 /* SWPlayableProtocol.h in Headers */,
 				846BFE2E7D90DBDD1D155049537DFBF7 /* SWRingback.h in Headers */,
+				847C20002AB49AA000BA6FC6 /* SWIntentManager.h in Headers */,
 				79FD763B465390F8F438998CBB0D8D63 /* SWRingtone.h in Headers */,
+				847C201B2AB49B2800BA6FC6 /* EWFileLogger.h in Headers */,
 				DE49D16406B167C69710944982D2DE5C /* SWTransportConfiguration.h in Headers */,
 				E12F2B584FACBD2689F3B6D8E4AD89DE /* SWUriFormatter.h in Headers */,
 			);
@@ -1574,6 +1662,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -1633,20 +1722,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847C20042AB49AA000BA6FC6 /* SWSipMessage.m in Sources */,
 				C17A8A742145F192DAABE5D002E3F859 /* NSString+PJString.m in Sources */,
 				AC9A5BE6ED3B1FD695A5096C9261C0ED /* SharkfoodMuteSwitchDetector.m in Sources */,
 				050F5EB132328073506AF11AB60FAE47 /* SWAccount.m in Sources */,
+				847C20032AB49AA000BA6FC6 /* SWIntentManager.m in Sources */,
 				CEE9F9CBECC9482B11E52DB1CBCF1453 /* SWAccountConfiguration.m in Sources */,
 				8639DFCE4B14DD70D23BD7786300A7BB /* SWCall.m in Sources */,
+				847C201C2AB49B2800BA6FC6 /* EWFileLogger.m in Sources */,
 				DAA195D03FC2F3F098AD9AEB15C9D2DB /* SWContact.m in Sources */,
 				383E5FB1F3C9F378CD19C32050C3A390 /* SWEndpoint.m in Sources */,
+				847C20152AB49AEA00BA6FC6 /* SWThreadManager.m in Sources */,
 				4F73FB9A1DD40CF68E08C05192D7A5C3 /* SWEndpointConfiguration.m in Sources */,
 				95F883E6A876B402F0B515FA7F36D375 /* Swig-dummy.m in Sources */,
 				50AE9F324124664AA9699192CB81DDF7 /* SWMutableCall.m in Sources */,
 				D7E2E6703B65F56F2638C5FB7AE81292 /* SWMutableContact.m in Sources */,
 				9503CCD1AA095E24645004CD11FCDDD1 /* SWRingback.m in Sources */,
+				847C20052AB49AA000BA6FC6 /* SWMessageSender.m in Sources */,
 				24DA84005094A10673AC7CD2B5B3F513 /* SWRingtone.m in Sources */,
+				847C20102AB49AEA00BA6FC6 /* transport_adapter_nack.c in Sources */,
+				847C20142AB49AEA00BA6FC6 /* SWSipThread.m in Sources */,
 				4DA7A5137A194A84A25F63B35D404E1B /* SWTransportConfiguration.m in Sources */,
+				847C20112AB49AEA00BA6FC6 /* transport_adapter_fec.c in Sources */,
 				FFE44E6DA03B5E69AA204064C03B3607 /* SWUriFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

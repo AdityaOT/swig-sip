@@ -67,7 +67,7 @@
 -(void)setLogLevel:(NSUInteger)logLevel {
     
     if (logLevel <= 0) {
-        DDLogDebug(@"log level has to be greater than 0. Setting it to the default.");
+        NSLog(@"log level has to be greater than 0. Setting it to the default.");
         _logLevel = kSWLogLevel;
     }
     
@@ -79,7 +79,7 @@
 -(void)setLogConsoleLevel:(NSUInteger)logConsoleLevel {
     
     if (logConsoleLevel <= 0) {
-        DDLogDebug(@"log console level has to be greater than 0. Setting it to the default.");
+        NSLog(@"log console level has to be greater than 0. Setting it to the default.");
         _logConsoleLevel = kSWLogConsoleLevel;
     }
     

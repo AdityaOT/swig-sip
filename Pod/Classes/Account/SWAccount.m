@@ -142,14 +142,14 @@ void * refToSelf;
     acc_cfg.reg_first_retry_interval = 30;
     
     //Ключевые фреймы в начале передачи посылаются через SWCall sendVideoKeyframe
-    acc_cfg.vid_stream_sk_cfg.count = 0;
+//    acc_cfg.vid_stream_sk_cfg.count = 0;
     //acc_cfg.vid_stream_sk_cfg.interval = 1000;
     
     int orient = PJMEDIA_ORIENT_ROTATE_90DEG;
     
     for (int i = pjsua_vid_dev_count()-1; i >= 0; i--) {
-        pjsua_vid_dev_set_setting(i, PJMEDIA_VID_DEV_CAP_ORIENTATION,
-                                  &orient, PJ_TRUE);
+//        pjsua_vid_dev_set_setting(i, PJMEDIA_VID_DEV_CAP_ORIENTATION,
+//                                  &orient, PJ_TRUE);
     }
     
 #pragma mark codec params settings
